@@ -1,0 +1,16 @@
+parameters:
+    chaplean_zoho_books_client.api.organization_id: '%chaplean_zoho_books.organization_id%'
+    chaplean_zoho_books_client.api.access_token: '%chaplean_zoho_books.access_token%'
+    chaplean_zoho_books_client.api.url: "https://books.zoho.com/api/v3/"
+
+services:
+    Chaplean\Bundle\ZohoBooksClientBundle\Api\ZohoBooksApi:
+        public: true
+        autoconfigure: true
+        autowire: true
+        alias : 'zoho_books_api'
+        arguments:
+            $caller: '@guzzle.client.zoho_books_api'
+            $url: '%chaplean_zoho_books_client.api.url%'
+            $accessToken: '%chaplean_zoho_books_client.api.access_token%'
+            $organizationId: '%chaplean_zoho_books_client.api.organization_id%'
