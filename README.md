@@ -1,5 +1,8 @@
 # ChapleanZohoBooksClientBundle
 
+[![build status](https://git.chaplean.coop/open-source/bundle/zoho-books-client-bundle/badges/master/build.svg)](https://git.chaplean.coop/open-source/bundle/zoho-books-client-bundle/commits/master)
+[![build status](https://git.chaplean.coop/open-source/bundle/zoho-books-client-bundle/badges/master/coverage.svg)](https://git.chaplean.coop/open-source/bundle/zoho-books-client-bundle/commits/master)
+
 
 # Prerequisites
 
@@ -30,13 +33,17 @@ imports:
     - { resource: '@ChapleanZohoBooksClientBundle/Resources/config/config.yml' }
 ```
 
-## 2. paramters.yml
+## 2. parameters.yml
 ```yml
 chaplean_zoho_books.access_token: 'your access token'
 chaplean_zoho_books.organization_id: 'your organization id'
 ```
 
 # Available functions:
+* Contacts
+    * getContacts()
+    * getContactPersons()
+    
 * Items
     * getItems()
     * getItem()
@@ -52,6 +59,8 @@ chaplean_zoho_books.organization_id: 'your organization id'
     * postEstimate()
     * putEstimate()
     * deleteEstimate()
+    * postEstimateAsDeclined()
+    * postEstimateAsAccepted()
 
 * Invoice
     * getInvoice()
