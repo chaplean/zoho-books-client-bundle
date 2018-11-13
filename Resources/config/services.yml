@@ -8,7 +8,6 @@ services:
         public: true
         autoconfigure: true
         autowire: true
-        alias : 'zoho_books_api'
         arguments:
             $caller: '@guzzle.client.zoho_books_api'
             $url: '%chaplean_zoho_books_client.api.url%'
