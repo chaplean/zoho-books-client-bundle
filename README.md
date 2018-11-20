@@ -66,34 +66,37 @@ if ($response->succeeded()) {
 ```
 
 ### Available functions:
-* Contacts
-    * getContacts()
-    * getContactPersons()
+
+* [Contacts](https://www.zoho.com/books/api/v3/#Contacts)
+    * [getContacts()](https://www.zoho.com/books/api/v3/#Contacts_List_Contacts)
+
+* [Contact-Persons](https://www.zoho.com/books/api/v3/#Contact-Persons)
+    * [getContactPersons()](https://www.zoho.com/books/api/v3/#Contact-Persons_List_contact_persons)
     
-* Items
-    * getItems()
-    * getItem()
-    * postItem()
-    * putItem()
-    * deleteItem()
-    * postItemActive()
-    * postItemInactive()
+* [Items](https://www.zoho.com/books/api/v3/#Items)
+    * [getItem()](https://www.zoho.com/books/api/v3/#Items_Get_an_item)
+    * [getItems()](https://www.zoho.com/books/api/v3/#Items_List_items)
+    * [postItem()](https://www.zoho.com/books/api/v3/#Items_Create_an_Item)
+    * [putItem()](https://www.zoho.com/books/api/v3/#Items_Update_an_item)
+    * [deleteItem()](https://www.zoho.com/books/api/v3/#Items_Delete_an_item)
+    * [postItemActive()](https://www.zoho.com/books/api/v3/#Items_Mark_as_active)
+    * [postItemInactive()](https://www.zoho.com/books/api/v3/#Items_Mark_as_inactive)
 
-* Estimate
-    * getEstimate()
-    * getEstimates()
-    * postEstimate()
-    * putEstimate()
-    * deleteEstimate()
-    * postEstimateAsDeclined()
-    * postEstimateAsAccepted()
+* [Estimate](https://www.zoho.com/books/api/v3/#Estimates)
+    * [getEstimate()](https://www.zoho.com/books/api/v3/#Estimates_Get_an_estimate)
+    * [getEstimates()](https://www.zoho.com/books/api/v3/#Estimates_List_estimates)
+    * [postEstimate()](https://www.zoho.com/books/api/v3/#Estimates_Create_an_Estimate)
+    * [putEstimate()](https://www.zoho.com/books/api/v3/#Estimates_Update_an_Estimate)
+    * [deleteEstimate()](https://www.zoho.com/books/api/v3/#Estimates_Delete_an_Estimate)
+    * [postEstimateAsDeclined()](https://www.zoho.com/books/api/v3/#Estimates_Mark_an_estimate_as_declined)
+    * [postEstimateAsAccepted()](https://www.zoho.com/books/api/v3/#Estimates_Mark_an_estimate_as_accepted)
 
-* Invoice
-    * getInvoice()
-    * getInvoices()
-    * postInvoice()
-    * putInvoice()
-    * deleteInvoice()
+* [Invoice](https://www.zoho.com/books/api/v3/#Invoices)
+    * [getInvoice()](https://www.zoho.com/books/api/v3/#Invoices_Get_an_invoice)
+    * [getInvoices()](https://www.zoho.com/books/api/v3/#Invoices_List_invoices)
+    * [postInvoice()](https://www.zoho.com/books/api/v3/#Invoices_Create_an_invoice)
+    * [putInvoice()](https://www.zoho.com/books/api/v3/#Invoices_Update_an_invoice)
+    * [deleteInvoice()](https://www.zoho.com/books/api/v3/#Invoices_Delete_an_invoice)
 
 ## Versioning
 
