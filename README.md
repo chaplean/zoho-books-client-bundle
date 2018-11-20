@@ -4,7 +4,7 @@
 [![build status](https://git.chaplean.coop/open-source/bundle/zoho-books-client-bundle/badges/master/coverage.svg)](https://git.chaplean.coop/open-source/bundle/zoho-books-client-bundle/commits/master)
 [![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/chaplean/zoho-books-client-bundle/issues)
 
-This bundle allows to use [zoho books api](https://www.zoho.com/books/api/v3/).
+This bundle allows you to use the [zoho books api](https://www.zoho.com/books/api/v3/) easily from your php code.
 
 ## Table of content
 
