@@ -4,7 +4,6 @@ namespace Chaplean\Bundle\ZohoBooksClientBundle\Api;
 
 use Chaplean\Bundle\RestClientBundle\Api\AbstractApi;
 use Chaplean\Bundle\RestClientBundle\Api\Parameter;
-use Chaplean\Bundle\RestClientBundle\Api\RequestRoute;
 use Chaplean\Bundle\RestClientBundle\Api\Route;
 use GuzzleHttp\ClientInterface;
 use Symfony\Component\EventDispatcher\EventDispatcherInterface;
@@ -12,32 +11,32 @@ use Symfony\Component\EventDispatcher\EventDispatcherInterface;
 /**
  * Class ZohoBooksApi
  *
- * @method Route        getContacts()
+ * @method Route getContacts()
  *
- * @method Route        getContactPersons()
+ * @method Route getContactPersons()
  *
- * @method Route        getItems()
- * @method Route        getItem()
- * @method Route        getEstimate()
- * @method Route        getEstimates()
- * @method Route        getInvoice()
- * @method Route        getInvoices()
+ * @method Route getItems()
+ * @method Route getItem()
+ * @method Route getEstimate()
+ * @method Route getEstimates()
+ * @method Route getInvoice()
+ * @method Route getInvoices()
  *
- * @method RequestRoute postItem()
- * @method RequestRoute postItemActive()
- * @method RequestRoute postItemInactive()
- * @method RequestRoute postEstimate()
- * @method RequestRoute postEstimateAsDeclined()
- * @method RequestRoute postEstimateAsAccepted()
- * @method RequestRoute postInvoice()
+ * @method Route postItem()
+ * @method Route postItemActive()
+ * @method Route postItemInactive()
+ * @method Route postEstimate()
+ * @method Route postEstimateAsDeclined()
+ * @method Route postEstimateAsAccepted()
+ * @method Route postInvoice()
  *
- * @method RequestRoute putItem()
- * @method RequestRoute putEstimate()
- * @method RequestRoute putInvoice()
+ * @method Route putItem()
+ * @method Route putEstimate()
+ * @method Route putInvoice()
  *
- * @method Route        deleteInvoice()
- * @method Route        deleteItem()
- * @method Route        deleteEstimate()
+ * @method Route deleteInvoice()
+ * @method Route deleteItem()
+ * @method Route deleteEstimate()
  *
  * @author    Hugo - Chaplean <hugo@chaplean.coop>
  * @copyright 2014 - 2018 Chaplean (http://www.chaplean.coop)
@@ -96,25 +95,25 @@ class ZohoBooksApi extends AbstractApi
                         ->defaultValue($this->token),
                     'organization_id' => Parameter::string()
                         ->defaultValue($this->organizationId),
-                    'contact_name'        => Parameter::string()
+                    'contact_name'    => Parameter::string()
                         ->optional(),
-                    'company_name'        => Parameter::string()
+                    'company_name'    => Parameter::string()
                         ->optional(),
-                    'first_name'        => Parameter::string()
+                    'first_name'      => Parameter::string()
                         ->optional(),
-                    'last_name'        => Parameter::string()
+                    'last_name'       => Parameter::string()
                         ->optional(),
-                    'address'        => Parameter::string()
+                    'address'         => Parameter::string()
                         ->optional(),
-                    'email'        => Parameter::string()
+                    'email'           => Parameter::string()
                         ->optional(),
-                    'phone'        => Parameter::string()
+                    'phone'           => Parameter::string()
                         ->optional(),
-                    'filter_by'   => Parameter::string()
+                    'filter_by'       => Parameter::string()
                         ->optional(), //Allowed Values: Status.All, Status.Active, Status.Inactive, Status.Duplicate and Status.Crm
-                    'search_text' => Parameter::string()
+                    'search_text'     => Parameter::string()
                         ->optional(),
-                    'sort_column' => Parameter::string()
+                    'sort_column'     => Parameter::string()
                         ->optional(), // Allowed Values: contact_name, first_name, last_name, email, outstanding_receivable_amount, created_time and last_modified_time
                 ]
             );
@@ -143,19 +142,19 @@ class ZohoBooksApi extends AbstractApi
                         ->defaultValue($this->token),
                     'organization_id' => Parameter::string()
                         ->defaultValue($this->organizationId),
-                    'name'        => Parameter::string()
+                    'name'            => Parameter::string()
                         ->optional(),
-                    'rate'        => Parameter::float()
+                    'rate'            => Parameter::float()
                         ->optional(),
-                    'description' => Parameter::string()
+                    'description'     => Parameter::string()
                         ->optional(),
-                    'tax_id '     => Parameter::id()
+                    'tax_id '         => Parameter::id()
                         ->optional(),
-                    'filter_by'   => Parameter::string()
+                    'filter_by'       => Parameter::string()
                         ->optional(), //Allowed Values: Status.All, Status.Active and Status.Inactive
-                    'search_text' => Parameter::string()
+                    'search_text'     => Parameter::string()
                         ->optional(),
-                    'sort_column' => Parameter::string()
+                    'sort_column'     => Parameter::string()
                         ->optional(), // Allowed Values: name, rate and tax_name
                 ]
             );
@@ -250,9 +249,9 @@ class ZohoBooksApi extends AbstractApi
                         ->defaultValue($this->token),
                     'organization_id' => Parameter::string()
                         ->defaultValue($this->organizationId),
-                    'print'  => Parameter::string()
+                    'print'           => Parameter::string()
                         ->optional(),
-                    'accept' => Parameter::string()
+                    'accept'          => Parameter::string()
                         ->optional(), //Allowed Values: json, pdf and html
                 ]
             );
@@ -260,9 +259,9 @@ class ZohoBooksApi extends AbstractApi
         $this->get('estimates', 'estimates')
             ->queryParameters(
                 [
-                    'authtoken'       => Parameter::string()
+                    'authtoken'        => Parameter::string()
                         ->defaultValue($this->token),
-                    'organization_id' => Parameter::string()
+                    'organization_id'  => Parameter::string()
                         ->defaultValue($this->organizationId),
                     'estimate_number'  => Parameter::string()
                         ->optional(),
@@ -410,9 +409,9 @@ class ZohoBooksApi extends AbstractApi
             )
             ->queryParameters(
                 [
-                    'authtoken'       => Parameter::string()
+                    'authtoken'                     => Parameter::string()
                         ->defaultValue($this->token),
-                    'organization_id' => Parameter::string()
+                    'organization_id'               => Parameter::string()
                         ->defaultValue($this->organizationId),
                     'send'                          => Parameter::string()
                         ->optional(),
@@ -553,9 +552,9 @@ class ZohoBooksApi extends AbstractApi
             )
             ->queryParameters(
                 [
-                    'authtoken'       => Parameter::string()
+                    'authtoken'                     => Parameter::string()
                         ->defaultValue($this->token),
-                    'organization_id' => Parameter::string()
+                    'organization_id'               => Parameter::string()
                         ->defaultValue($this->organizationId),
                     'ignore_auto_number_generation' => Parameter::bool()
                         ->optional(),
@@ -582,9 +581,9 @@ class ZohoBooksApi extends AbstractApi
                         ->defaultValue($this->token),
                     'organization_id' => Parameter::string()
                         ->defaultValue($this->organizationId),
-                    'print'  => Parameter::string()
+                    'print'           => Parameter::string()
                         ->optional(),
-                    'accept' => Parameter::string()
+                    'accept'          => Parameter::string()
                         ->optional(), //Allowed Values: json, pdf and html
                 ]
             );
@@ -592,9 +591,9 @@ class ZohoBooksApi extends AbstractApi
         $this->get('invoices', 'invoices')
             ->queryParameters(
                 [
-                    'authtoken'       => Parameter::string()
+                    'authtoken'            => Parameter::string()
                         ->defaultValue($this->token),
-                    'organization_id' => Parameter::string()
+                    'organization_id'      => Parameter::string()
                         ->defaultValue($this->organizationId),
                     'invoice_number'       => Parameter::string()
                         ->optional(),
@@ -793,9 +792,9 @@ class ZohoBooksApi extends AbstractApi
             )
             ->queryParameters(
                 [
-                    'authtoken'       => Parameter::string()
+                    'authtoken'                     => Parameter::string()
                         ->defaultValue($this->token),
-                    'organization_id' => Parameter::string()
+                    'organization_id'               => Parameter::string()
                         ->defaultValue($this->organizationId),
                     'send'                          => Parameter::string()
                         ->optional(),
@@ -964,9 +963,9 @@ class ZohoBooksApi extends AbstractApi
             )
             ->queryParameters(
                 [
-                    'authtoken'       => Parameter::string()
+                    'authtoken'                     => Parameter::string()
                         ->defaultValue($this->token),
-                    'organization_id' => Parameter::string()
+                    'organization_id'               => Parameter::string()
                         ->defaultValue($this->organizationId),
                     'ignore_auto_number_generation' => Parameter::string()
                         ->optional(),
