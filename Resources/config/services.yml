@@ -9,7 +9,7 @@ services:
         autoconfigure: true
         autowire: true
         arguments:
-            $caller: '@guzzle.client.zoho_books_api'
+            $caller: '@eight_points_guzzle.client.zoho_books_api'
             $url: '%chaplean_zoho_books_client.api.url%'
             $accessToken: '%chaplean_zoho_books_client.api.access_token%'
             $organizationId: '%chaplean_zoho_books_client.api.organization_id%'

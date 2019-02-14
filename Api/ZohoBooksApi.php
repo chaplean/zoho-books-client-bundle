@@ -2,42 +2,41 @@
 
 namespace Chaplean\Bundle\ZohoBooksClientBundle\Api;
 
-use Chaplean\Bundle\RestClientBundle\Api\AbstractApi;
-use Chaplean\Bundle\RestClientBundle\Api\Parameter;
-use Chaplean\Bundle\RestClientBundle\Api\RequestRoute;
-use Chaplean\Bundle\RestClientBundle\Api\Route;
+use Chaplean\Bundle\ApiClientBundle\Api\AbstractApi;
+use Chaplean\Bundle\ApiClientBundle\Api\Parameter;
+use Chaplean\Bundle\ApiClientBundle\Api\Route;
 use GuzzleHttp\ClientInterface;
 use Symfony\Component\EventDispatcher\EventDispatcherInterface;
 
 /**
  * Class ZohoBooksApi
  *
- * @method Route        getContacts()
+ * @method Route getContacts()
  *
- * @method Route        getContactPersons()
+ * @method Route getContactPersons()
  *
- * @method Route        getItems()
- * @method Route        getItem()
- * @method Route        getEstimate()
- * @method Route        getEstimates()
- * @method Route        getInvoice()
- * @method Route        getInvoices()
+ * @method Route getItems()
+ * @method Route getItem()
+ * @method Route getEstimate()
+ * @method Route getEstimates()
+ * @method Route getInvoice()
+ * @method Route getInvoices()
  *
- * @method RequestRoute postItem()
- * @method RequestRoute postItemActive()
- * @method RequestRoute postItemInactive()
- * @method RequestRoute postEstimate()
- * @method RequestRoute postEstimateAsDeclined()
- * @method RequestRoute postEstimateAsAccepted()
- * @method RequestRoute postInvoice()
+ * @method Route postItem()
+ * @method Route postItemActive()
+ * @method Route postItemInactive()
+ * @method Route postEstimate()
+ * @method Route postEstimateAsDeclined()
+ * @method Route postEstimateAsAccepted()
+ * @method Route postInvoice()
  *
- * @method RequestRoute putItem()
- * @method RequestRoute putEstimate()
- * @method RequestRoute putInvoice()
+ * @method Route putItem()
+ * @method Route putEstimate()
+ * @method Route putInvoice()
  *
- * @method Route        deleteInvoice()
- * @method Route        deleteItem()
- * @method Route        deleteEstimate()
+ * @method Route deleteInvoice()
+ * @method Route deleteItem()
+ * @method Route deleteEstimate()
  *
  * @author    Hugo - Chaplean <hugo@chaplean.coop>
  * @copyright 2014 - 2018 Chaplean (http://www.chaplean.coop)
