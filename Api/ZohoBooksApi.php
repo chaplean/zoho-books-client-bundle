@@ -76,6 +76,7 @@ class ZohoBooksApi extends AbstractApi
     {
         $this->globalParameters()
             ->sendJSONString()
+            ->expectsJson()
             ->urlPrefix($this->url)
             ->queryParameters(
                 [
