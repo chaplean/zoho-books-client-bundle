@@ -29,16 +29,8 @@
         "symfony/yaml": "^2.8 || ^3.0 || ^4.0"
     },
     "require-dev": {
-        "chaplean/continuous-integration-scripts": "^2.1",
         "chaplean/coding-standard": "^1.1",
-        "mockery/mockery": "dev-master",
-        "phpunit/phpunit": "^7.0",
-        "symfony/http-kernel": "^2.8 || ^3.0 || ^4.0",
-        "symfony/var-dumper": "^2.8 || ^3.0 || ^4.0"
-    },
-    "config": {
-        "bin-dir": "bin",
-        "discard-changes": true,
-        "sort-packages": true
+        "mockery/mockery": "^1.2",
+        "symfony/phpunit-bridge": "^4.0"
     }
 }
