@@ -1,14 +1,8 @@
 # Managed by Composer
-/bin
 /vendor
 
-# Assets and user uploads
-/web/bundles/
-/web/uploads/
-
 # PHPUnit
-/phpunit.xml
-/phpunit-*.xml
+.phpunit
 
 # Auto-saved files
 *~
@@ -19,20 +13,5 @@
 # PhpStorm
 .idea
 
-# Compass
-.sass-cache/
-
 # Composer
 /composer.phar
-
-# Build data
-/build/
-
-# Karma coverage
-coverage/
-
-# Codeship
-/codeship.aes
-
-# Database
-/.db
